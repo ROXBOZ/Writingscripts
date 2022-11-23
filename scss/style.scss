@@ -1,0 +1,49 @@
+@import "vars.scss";
+@import "accessibility.scss";
+@import "buttons.scss";
+@import "fonts.scss";
+@import "footer.scss";
+@import "forms.scss";
+@import "header.scss";
+@import "images.scss";
+@import "responsive.scss";
+@import "tables.scss";
+@import "typography.scss";
+@import "lang.scss";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  color: $text-color;
+  background-color: $background-color;
+  overflow-wrap: break-word;
+  hyphens: none;
+}
+
+main {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  table,
+  form {
+    grid-column-start: 1;
+  }
+}
+
+.ressources {
+  border-radius: 2em;
+  padding: 3em;
+  height: fit-content;
+  grid-column-start: 2;
+  h3 {
+    margin-top: 0;
+  }
+}

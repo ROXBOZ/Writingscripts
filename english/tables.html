@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>A11Y Tables</title>
+  </head>
+
+  <body>
+    <header class="latin">
+      <a id="logo-header" href="index.html">Project Name</a>
+
+      <div class="main-menu-container">
+        <nav class="main-menu">
+          <a href="index.html">Paragraphs</a>
+          <a href="tables.html">Tables</a>
+          <a href="forms.html">Forms</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="latin">
+      <div class="article">
+        <h1>Tables</h1>
+        <p class="pretitle">CSS Settings</p>
+        <h2>Tables</h2>
+        <p>
+          This demo Tables doesn't only adapts on language switch, but also
+          display a few settings to watch out for accessible multilingual
+          webdesign.
+        </p>
+      </div>
+      <div class="table-container">
+        <table class="latin">
+          <tr>
+            <th>Language(s)</th>
+            <th>Script</th>
+            <th><pre>font-size</pre></th>
+            <th><pre>line-height</pre></th>
+            <th><pre>max-width</pre></th>
+          </tr>
+          <tr>
+            <td>Western European Languages</td>
+            <td>Latin</td>
+            <td><pre>16px</pre></td>
+            <td><pre>1.5</pre></td>
+            <td><pre>85ch</pre></td>
+          </tr>
+          <tr>
+            <td>Arabic, Farsi</td>
+            <td>Arabic</td>
+            <td><pre>18px</pre></td>
+            <td><pre>2</pre></td>
+            <td><pre>50ch</pre></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <footer class="latin">
+      <div class="demo-container">
+        <p id="switcher" class="pretitle">Demos Language Switch</p>
+        <h2>Let's try this!</h2>
+        <p>
+          Here you can switch the language of this content and notice the CSS
+          changes.
+        </p>
+        <div class="button-container">
+          <a href="../arabic/tables_ar.html" class="button-look">Arabic</a>
+        </div>
+        <p>
+          This is about to become an endless work in progress!<br />
+          <a href="mailto:roxboz@gmail.com">Write me an email</a> to add here a
+          demo button for your language script.
+        </p>
+        <p>By <a href="https://www.roxanne-borloz.net">Roxanne Borloz</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

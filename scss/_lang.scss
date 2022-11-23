@@ -1,0 +1,138 @@
+$accent-colors: (
+  latin: fuchsia,
+  arabic: tomato,
+);
+@each $lang, $color in $accent-colors {
+  .#{$lang} {
+    .pretitle,
+    a,
+    pre {
+      color: $color;
+    }
+
+    input {
+      accent-color: $color;
+    }
+
+    .ressources {
+      border: solid 2px $color;
+    }
+
+    .button,
+    .button-look {
+      &:hover {
+        color: black !important;
+        background-color: $color;
+        border: 2px solid $color;
+      }
+    }
+  }
+}
+
+$lang-direction: (
+  latin: ltr,
+  arabic: rtl,
+);
+@each $lang, $direction in $lang-direction {
+  .#{$lang} {
+    direction: $direction;
+  }
+}
+
+$font-family: (
+  latin: "Noto Sans",
+  arabic: "Noto Sans Arabic",
+);
+@each $lang, $typeface in $font-family {
+  .#{$lang} {
+    font-family: $typeface;
+  }
+}
+
+$font-size: (
+  latin: 16px,
+  arabic: 18px,
+);
+@each $lang, $size in $font-size {
+  .#{$lang} {
+    font-size: $size;
+  }
+}
+
+$line-height: (
+  latin: 1.75,
+  arabic: 2,
+);
+@each $lang, $height in $line-height {
+  .#{$lang} {
+    line-height: $height;
+  }
+}
+
+$letter-spacing: (
+  latin: 0.5px,
+  arabic: 0px,
+);
+@each $lang, $kerning in $letter-spacing {
+  .#{$lang} {
+    letter-spacing: $kerning;
+  }
+}
+
+$max-width: (
+  latin: 80ch,
+  arabic: 50ch,
+);
+@each $lang, $width in $max-width {
+  .article.#{$lang} {
+    max-width: $width;
+  }
+}
+
+$justification-article: (
+  latin: padding-left,
+  arabic: padding-right,
+);
+@each $lang, $padding in $justification-article {
+  header.#{$lang},
+  main.#{$lang},
+  footer.#{$lang} {
+    #{$padding}: 15%;
+  }
+}
+
+$espace-article-ressources: (
+  latin: margin-right,
+  arabic: margin-left,
+);
+
+@each $lang, $margin in $espace-article-ressources {
+  .article.#{$lang} {
+    #{$margin}: 2rem;
+  }
+}
+
+$header-padding: (
+  latin: padding-right,
+  arabic: padding-left,
+);
+@each $lang, $padding in $header-padding {
+  header.#{$lang},
+  main.#{$lang},
+  footer.#{$lang} {
+    #{$padding}: 3rem;
+  }
+}
+
+$text-align: (
+  latin: left,
+  arabic: right,
+);
+
+@each $lang, $alignment in $text-align {
+  table.#{$lang} {
+    th {
+      text-align: $alignment;
+    }
+  }
+}

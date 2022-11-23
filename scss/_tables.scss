@@ -1,0 +1,30 @@
+.table-container {
+  grid-column-start: 1;
+}
+table {
+  border-spacing: 0px;
+  th {
+    padding: 1em;
+    pre {
+      &:before {
+        content: "<";
+      }
+      &:after {
+        content: ">";
+      }
+    }
+  }
+
+  tr:nth-child(even) {
+    background-color: $highlight;
+  }
+
+  td {
+    margin: 0;
+    padding: 1em;
+  }
+}
+
+table + span {
+  margin-top: 0 !important;
+}

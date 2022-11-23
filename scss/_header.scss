@@ -1,0 +1,24 @@
+header {
+  background: black;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+
+  #logo-header {
+    border-bottom: none !important;
+    font-size: 150%;
+    color: white;
+  }
+
+  .main-menu-container {
+    grid-column-start: 2;
+    .main-menu {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+    }
+  }
+}

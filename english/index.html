@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>A11Y</title>
+  </head>
+
+  <body>
+    <a class="skip-to-content-link" href="#main"> Skip to content </a>
+
+    <header class="latin">
+      <a id="logo-header" href="index.html">(A11Y + Multilingualism)</a>
+
+      <div class="main-menu-container">
+        <nav class="main-menu">
+          <a href="index.html">Paragraphs</a>
+          <a href="tables.html">Tables</a>
+          <a href="forms.html">Forms</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="hero-container">
+      <img class="hero-img" src="../images/hero.jpg" alt="" />
+    </div>
+
+    <main id="main" class="latin">
+      <div class="article latin">
+        <h1>Paragraphs</h1>
+
+        <p class="pretitle">Intro</p>
+        <h2>Who is A11Y?</h2>
+        <p>
+          Web accessibility (or A11Y) allows people with disabilities - visual,
+          auditory or cognitive - permanent or temporary - to navigate the web
+          easily. The
+          <a href="https://www.w3.org/TR/WCAG21/" target="_blank">
+            WCAG 2.1 AA standards<span class="screen-reader-text"
+              >(open a new tab)</span
+            >
+          </a>
+          (Web Content Accessibility Guidelines) define a whole series of
+          principles to be applied in order to ensure a perceptible, usable and
+          understandable web for everyone.
+        </p>
+        <p>
+          Web accessibility is web inclusion. Code, design and content have to
+          meets some standards for a website to be accessible. Web Accessibility
+          increases the user experience – everyone should benefit from it.
+        </p>
+
+        <p class="pretitle">Text & Font CSS settings</p>
+        <h2>Accessibility & Writing systems</h2>
+        <p>
+          Good practice in web typography and web accessibility means well
+          adjusted CSS settings.
+        </p>
+        <p>
+          But, different writing systems mean different CSS adjustments. To
+          mention just a few examples, paragraphs are commonly set at 16px in
+          Latin, but the Arabic writing system needs 18px to reach satisfying
+          readibility. Vietnamese is based on the latin writing system, but its
+          accented glyphs can be much taller than those found in Western
+          European languages; for this reason, it needs extra line-height to
+          maintain readability. Cyrillic on the other hand adapts well to latin
+          CSS settings.
+        </p>
+        <p>
+          Most websites hosted in Europe and the Americas translated in writing
+          systems other than Latin are not set correctly. As a result, the user
+          experience drops drastically, when switching the language.
+        </p>
+
+        <!-- <figure>
+          <img class="img-header" src="images/banner.jpg" alt="" />
+        </figure> -->
+        <p class="pretitle">Layout CSS settings</p>
+        <h2>Language directions</h2>
+        <p>
+          Content are translated and, when the direction of the language
+          changes, the layout must get inverted. However, most of the time, the
+          layout keeps following the left-to-right logic in all languages (menu
+          remains top right, logo remains top left, etc). An inclusive
+          multilingual website should see its layout reverted to be correctly
+          adapted to right-to-left writing scripts. It includes menus, tables,
+          forms, etc.
+        </p>
+        <p>
+          Last but not least, not only the design but also the code has to be
+          adaped; when navigating the website with a keyboard, the tab focus
+          should follow the direction of the language.
+        </p>
+        <p>
+          This website aims to become a ressourceful tool when designing
+          multilingual websites. For now, it's just a beginning.
+        </p>
+      </div>
+      <div class="ressources latin">
+        <h3>Ressources</h3>
+        <ul>
+          <li>
+            <a href="https://www.w3.org/TR/alreq/"
+              >Text Layout Requirements for the Arabic Script</a
+            >
+            by W3C
+          </li>
+
+          <li>
+            <a
+              href="https://fonts.google.com/knowledge/using_type/language_support_in_fonts#language-categories-reference"
+              >Language categories reference</a
+            >
+            by Google
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="latin">
+      <div class="demo-container">
+        <p id="switcher" class="pretitle">Demos Language Switch</p>
+        <h2>Let's try this!</h2>
+        <p>
+          Here you can switch the language of this content and notice the CSS
+          changes.
+        </p>
+        <div class="button-container">
+          <a href="../arabic/index_ar.html" class="button-look">Arabic</a>
+        </div>
+        <p>
+          This is about to become an endless work in progress!<br />
+          <a href="mailto:roxboz@gmail.com">Write me an email</a> to add here a
+          demo button for your language script.
+        </p>
+        <p>By <a href="https://www.roxanne-borloz.net">Roxanne Borloz</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

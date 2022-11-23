@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>A11Y Forms</title>
+  </head>
+
+  <body>
+    <header class="latin">
+      <a id="logo-header" href="index.html">Project Name</a>
+
+      <div class="main-menu-container">
+        <nav class="main-menu">
+          <a href="index.html">Paragraphs</a>
+          <a href="tables.html">Tables</a>
+          <a href="forms.html">Forms</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="latin">
+      <div class="article">
+        <h1>Forms</h1>
+        <p class="pretitle">Multilinguisim & A11Y</p>
+        <h2>Forms</h2>
+        <p>
+          This demo Form allows you to contact me if you wish to see a new
+          writing system added to the demo of this website.
+        </p>
+      </div>
+
+      <div class="form-container">
+        <h3>Contact me to contribute</h3>
+
+        <div class="form-submit-correction">
+          <label class="form-control">
+            <input class="radio-button" type="radio" name="radio" />
+            I submit a correction for
+          </label>
+          <select
+            class="form-correcting-lang"
+            name="lang-correction"
+            id="lang-correction"
+          >
+            <option value="arabic">Arabic</option>
+          </select>
+        </div>
+        <div class="form-submit-suggestion">
+          <label class="form-control">
+            <input class="radio-button" type="radio" name="radio" />
+            I can help adding
+          </label>
+          <input class="form-adding-lang" list="lang" name="lang-suggestion" />
+          <datalist id="lang">
+            <option value="Chinese">Chinese</option>
+            <option value="Corean">Corean</option>
+            <option value="Devanagari">Devanagari</option>
+            <option value="Hebrew">Hebrew</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Russian">Russian</option>
+            <option value="Thai">Thai</option>
+            <option value="Ukrainian">Ukrainian</option>
+            <option value="Vietnamese">Vietnamese</option>
+          </datalist>
+        </div>
+        <!-- <div class="form-check-terms">
+          <input type="checkbox" id="terms" name="terms" value="terms" />
+          <label for="vehicle1">
+            I have read and understood the terms and conditions</label
+          >
+        </div> -->
+        <div class="button-container">
+          <input class="button" type="submit" value="Submit" />
+        </div>
+      </div>
+    </main>
+    <footer class="latin">
+      <div class="demo-container">
+        <p id="switcher" class="pretitle">Demos Language Switch</p>
+        <h2>Let's try this!</h2>
+        <p>
+          Here you can switch the language of this content and notice the CSS
+          changes.
+        </p>
+        <div class="button-container">
+          <a href="../arabic/forms_ar.html" class="button-look">Arabic</a>
+        </div>
+        <p>
+          This is about to become an endless work in progress!<br />
+          <a href="mailto:roxboz@gmail.com">Write me an email</a> to add here a
+          demo button for your language script.
+        </p>
+        <p>By <a href="https://www.roxanne-borloz.net">Roxanne Borloz</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

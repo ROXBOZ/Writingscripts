@@ -1,0 +1,17 @@
+.form-container {
+  margin-top: 1em;
+  padding: 2em;
+  border-radius: 2em;
+  width: fit-content;
+  h3 {
+    margin-top: 0;
+  }
+  background-color: black;
+  grid-column-start: 1;
+  display: flex;
+  flex-direction: column;
+  .form-submit-correction,
+  .form-submit-suggestion {
+    padding: 1em 0;
+  }
+}
