@@ -10,6 +10,10 @@ $accent-colors: (
       color: $color;
     }
 
+    .skip-to-content-link {
+      background-color: $color;
+    }
+
     input {
       accent-color: $color;
     }
